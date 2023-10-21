@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "924285328807",
+    "firebase_url": "https://learning-base-21c34.firebaseio.com",
+    "project_id": "learning-base-21c34",
+    "storage_bucket": "learning-base-21c34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924285328807:android:52de6eaaebcf2da09caa82",
+        "android_client_info": {
+          "package_name": "com.example.tracklocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "924285328807-88enb62ofsd1tuuncdk7o8m2rt94babe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3NbPCLAopbrPNVjwNMjAWsI8viffLeJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "924285328807-88enb62ofsd1tuuncdk7o8m2rt94babe.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.tracklocation"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
