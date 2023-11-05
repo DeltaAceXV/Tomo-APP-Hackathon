@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/rendering.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:intl/intl.dart';
 
 import 'package:tracklocation/Components/square_tile.dart';
@@ -10,7 +9,6 @@ import 'package:tracklocation/DTO/LoginDTO.dart';
 
 import '../../DTO/Location.dart';
 import '../../Helpers/ImageHelper.dart';
-import '../../Helpers/GeolocationHelper.dart';
 
 class UserProfile extends StatefulWidget{
   @override
@@ -30,7 +28,6 @@ class _UserProfile extends State<UserProfile>{
   final address1Controller = TextEditingController();
   final address2Controller = TextEditingController();
 
-  final geoLocationHelper = GeolocationHelper();
 
   String gender = "Male";
   DateTime selectedDate = DateTime.now();
@@ -79,34 +76,34 @@ class _UserProfile extends State<UserProfile>{
       selectedDate = value.first.Birthdate ?? selectedDate;
       addressLocation = value.first.location ?? addressLocation;
 
-      var placemark = geoLocationHelper.GetAddressFromCoordinates(
-        Position(
-          latitude: addressLocation.Latitude ?? 0
-        , longitude: addressLocation.Longitude ?? 0
-        , accuracy: 5
-        , altitude: 0
-        , speed: 0
-        , heading: 0
-        , timestamp: DateTime.now()
-        , speedAccuracy: 10
-        )
-      );
+      // var placemark = geoLocationHelper.GetAddressFromCoordinates(
+      //   // Position(
+      //   //   latitude: addressLocation.Latitude ?? 0
+      //   // , longitude: addressLocation.Longitude ?? 0
+      //   // , accuracy: 5
+      //   // , altitude: 0
+      //   // , speed: 0
+      //   // , heading: 0
+      //   // , timestamp: DateTime.now()
+      //   // , speedAccuracy: 10
+      //   // )
+      // );
 
-      placemark.then((address) {
-        List<String> listAddress = [];
-        List<String> listAddress2 = [];
+      // placemark.then((address) {
+      //   List<String> listAddress = [];
+      //   List<String> listAddress2 = [];
 
-        listAddress.add(address.street ?? "");
-        listAddress.add(address.subLocality ?? "");
-        listAddress.add(address.thoroughfare ?? "");
+      //   listAddress.add(address.street ?? "");
+      //   listAddress.add(address.subLocality ?? "");
+      //   listAddress.add(address.thoroughfare ?? "");
 
-        listAddress2.add(address.administrativeArea ?? "");
-        listAddress2.add(address.postalCode ?? "");
+      //   listAddress2.add(address.administrativeArea ?? "");
+      //   listAddress2.add(address.postalCode ?? "");
 
-        address1Controller.text = '${listAddress.join(',')} ';
-        address2Controller.text = '${listAddress2.join(',')}';
+      //   address1Controller.text = '${listAddress.join(',')} ';
+      //   address2Controller.text = '${listAddress2.join(',')}';
         
-      });
+      // });
 
 
       setState(() {
@@ -282,26 +279,7 @@ class _UserProfile extends State<UserProfile>{
                               child: ElevatedButton(
                                 onPressed: () {
                                   setState(() {
-                                    geoLocationHelper.DetermineGeoPosition().then((value) {
-                                      addressLocation.latitude = value.latitude;
-                                      addressLocation.longitude = value.longitude;
-                                     
-                                      geoLocationHelper.GetAddressFromCoordinates(value).then((address) {
-                                        List<String> listAddress = [];
-                                        List<String> listAddress2 = [];
-
-                                        listAddress.add(address.street ?? "");
-                                        listAddress.add(address.subLocality ?? "");
-                                        listAddress.add(address.thoroughfare ?? "");
-
-                                        listAddress2.add(address.administrativeArea ?? "");
-                                        listAddress2.add(address.postalCode ?? "");
-
-                                        address1Controller.text = '${listAddress.join(',')} ';
-                                        address2Controller.text = '${listAddress2.join(',')}';
-                                      });
-
-                                    });
+                                    
                                   });
 
                                   return;

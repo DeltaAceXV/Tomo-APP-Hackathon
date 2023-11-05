@@ -68,7 +68,7 @@ class DefaultFirebaseOptions {
     storageBucket: 'learning-base-21c34.appspot.com',
     iosClientId:
         '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
-    iosBundleId: 'com.example.tracklocation',
+    iosBundleId: 'com.flutter.tomoapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
@@ -80,6 +80,6 @@ class DefaultFirebaseOptions {
     storageBucket: 'learning-base-21c34.appspot.com',
     iosClientId:
         '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
-    iosBundleId: 'com.example.tracklocation',
+    iosBundleId: 'com.flutter.tomoapp',
   );
 }

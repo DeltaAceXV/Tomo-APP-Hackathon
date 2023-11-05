@@ -15,7 +15,6 @@ dependencies:
   flutter:
     sdk: flutter
   google_sign_in: ^6.1.2
-  geolocator: ^8.2.0
   geocoding: ^2.0.4
   intl: ^0.18.1
   permission_handler: ^10.3.0

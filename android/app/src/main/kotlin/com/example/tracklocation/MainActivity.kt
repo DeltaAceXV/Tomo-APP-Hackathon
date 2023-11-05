@@ -1,4 +1,4 @@
-package com.example.tracklocation
+package com.flutter.tomoapp
 
 import io.flutter.embedding.android.FlutterActivity
 
