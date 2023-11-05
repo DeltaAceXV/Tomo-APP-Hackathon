@@ -44,23 +44,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAnJu0qZDn1CKAXG_Nu1FWJt2oN2gnyyUE',
-    appId: '1:924285328807:web:4b675222cee55faf9caa82',
-    messagingSenderId: '924285328807',
-    projectId: 'learning-base-21c34',
-    authDomain: 'learning-base-21c34.firebaseapp.com',
-    databaseURL: 'https://learning-base-21c34.firebaseio.com',
-    storageBucket: 'learning-base-21c34.appspot.com',
-  );
+      apiKey: "AIzaSyDR06CeT-UMni1LC9datHKjnohMb2T33L0",
+      authDomain: "tomoacc-dbb41.firebaseapp.com",
+      projectId: "tomoacc-dbb41",
+      storageBucket: "tomoacc-dbb41.appspot.com",
+      messagingSenderId: "693044768885",
+      appId: "1:693044768885:web:33e849a04bf4fffe9a083c");
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC3NbPCLAopbrPNVjwNMjAWsI8viffLeJg',
-    appId: '1:924285328807:android:52de6eaaebcf2da09caa82',
-    messagingSenderId: '924285328807',
-    projectId: 'learning-base-21c34',
-    databaseURL: 'https://learning-base-21c34.firebaseio.com',
-    storageBucket: 'learning-base-21c34.appspot.com',
-  );
+      apiKey: 'AIzaSyDR06CeT-UMni1LC9datHKjnohMb2T33L0',
+      appId: "1:693044768885:web:33e849a04bf4fffe9a083c",
+      messagingSenderId: "693044768885",
+      databaseURL: 'https://tomoacc-dbb41.firebaseapp.com',
+      projectId: "tomoacc-dbb41",
+      storageBucket: "tomoacc-dbb41.appspot.com");
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyAK3urCAYCOynE947LYcC1dbNPfI-qxi9E',
@@ -69,7 +66,8 @@ class DefaultFirebaseOptions {
     projectId: 'learning-base-21c34',
     databaseURL: 'https://learning-base-21c34.firebaseio.com',
     storageBucket: 'learning-base-21c34.appspot.com',
-    iosClientId: '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
+    iosClientId:
+        '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
     iosBundleId: 'com.example.tracklocation',
   );
 
@@ -80,7 +78,8 @@ class DefaultFirebaseOptions {
     projectId: 'learning-base-21c34',
     databaseURL: 'https://learning-base-21c34.firebaseio.com',
     storageBucket: 'learning-base-21c34.appspot.com',
-    iosClientId: '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
+    iosClientId:
+        '924285328807-9gbjq0maqad0mck2h9li3a9fltr5rfkm.apps.googleusercontent.com',
     iosBundleId: 'com.example.tracklocation',
   );
 }
