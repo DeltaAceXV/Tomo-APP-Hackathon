@@ -61,40 +61,26 @@ class BuddySpaceState extends State<BuddySpace> {
               children: [
                 Column(
                   children: [
-                    ChatBubble(message: "Hello!", alignment: "left"),
+                    ChatBubble(message: "Hey Denise!", alignment: "left"),
                     ChatBubble(
-                        message: "How have you been?", alignment: "left"),
+                        message: "What are you planning to do today?", alignment: "left"),
                     ChatBubble(
                         message:
-                            "My Todos for Today: \n\n- Study English\n- Code",
+                            "My Todos for Today: \n\n- Study Bio Chapter 4\n- Memorize Periodic Table",
                         alignment: "right"),
                     ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
+                        message: "Hey pal! I just updated them and these are my todos for today 😊",
                         alignment: "right"),
                     ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
+                        message: "Great! I'll be updating mine in a bit",
+                        alignment: "left"),
                     ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
+                        message: "All the best to you and have a great day!",
+                        alignment: "left"),
                     ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
+                        message: "Thanks! And the same goes to you :D",
                         alignment: "right"),
-                    ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
-                    ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
-                    ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
-                    ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
-                    ChatBubble(
-                        message: "Hey pal! These are my todos for today 😊",
-                        alignment: "right"),
+  
                   ],
                 ),
               ],

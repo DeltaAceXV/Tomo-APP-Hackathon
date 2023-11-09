@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tracklocation/Components/SectionHeader.dart';
 
 class Notifications extends StatelessWidget {
   const Notifications({super.key});
@@ -17,11 +18,8 @@ class Notifications extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text("Requests",
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20)),
+            SectionHeader(title: "Requests"),
+
             Card(
                 child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
@@ -29,7 +27,7 @@ class Notifications extends StatelessWidget {
                 Icon(Icons.people_alt_rounded),
                 SizedBox(width: 15),
                 Expanded(
-                    child: Text("5 Buddy Requests",
+                    child: Text("3 Buddy Requests",
                         style: TextStyle(fontSize: 16))),
                 TextButton(
                     onPressed: () {
@@ -38,20 +36,11 @@ class Notifications extends StatelessWidget {
                     child: const Text("View")),
               ]),
             )),
-            // BuddyCard(
-            //     name: "Denise",
-            //     gender: "F",
-            //     educationLevel: "HS",
-            //     description: "Lorem Ipsum..."),
 
             SizedBox(height: 20),
 
-            Text("Activities",
-                style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontWeight: FontWeight.w600,
-                    fontSize: 20)),
-
+            SectionHeader(title: "Activities"),
+  
             Card(
                 child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 12, vertical: 15),
@@ -88,75 +77,7 @@ class Notifications extends StatelessWidget {
                             child: Text(
                                 "Joseph accepted your buddy request. You may start to get to know each other.")),
                       ],
-                    ),
-                    Divider(thickness: 1, height: 30),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blue.shade800,
-                          child: const Text(
-                            'JT',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Flexible(
-                            child: Text(
-                                "Joseph accepted your buddy request. You may start to get to know each other.")),
-                      ],
-                    ),
-                    Divider(thickness: 1, height: 30),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blue.shade800,
-                          child: const Text(
-                            'JT',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Flexible(
-                            child: Text(
-                                "Joseph accepted your buddy request. You may start to get to know each other.")),
-                      ],
-                    ),
-                    Divider(thickness: 1, height: 30),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blue.shade800,
-                          child: const Text(
-                            'JT',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Flexible(
-                            child: Text(
-                                "Joseph accepted your buddy request. You may start to get to know each other.")),
-                      ],
-                    ),
-                    Divider(thickness: 1, height: 30),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        CircleAvatar(
-                          backgroundColor: Colors.blue.shade800,
-                          child: const Text(
-                            'JT',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(width: 10),
-                        Flexible(
-                            child: Text(
-                                "Joseph accepted your buddy request. You may start to get to know each other.")),
-                      ],
-                    ),
+                    )
                   ]),
             ))
           ],

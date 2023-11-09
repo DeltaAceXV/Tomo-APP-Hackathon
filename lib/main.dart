@@ -1,4 +1,3 @@
-
 import 'dart:io';
 
 import 'package:firebase_core/firebase_core.dart';
@@ -10,6 +9,7 @@ import 'package:tracklocation/View/Buddy/BuddySettings.dart';
 import 'package:tracklocation/View/Buddy/InviteBuddy.dart';
 import 'package:tracklocation/View/Home/AddTasks.dart';
 import 'package:tracklocation/View/Home/CheckInTasks.dart';
+import 'package:tracklocation/View/Home/HomePage.dart';
 import 'package:tracklocation/View/Notifications/BuddyRequest.dart';
 import 'package:tracklocation/View/Notifications/Notifications.dart';
 import 'package:tracklocation/View/Space/BuddySpace.dart';
@@ -35,27 +35,25 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.dark,
-      statusBarBrightness: 
-        (!kIsWeb && Platform.isAndroid) ? Brightness.dark : Brightness.light
-    ));
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: (!kIsWeb && Platform.isAndroid)
+            ? Brightness.dark
+            : Brightness.light));
 
     return MaterialApp(
-      title: 'Track Current Location App',
+      title: 'Tomo App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
-        fontFamily: 'Inter',
-        platform: TargetPlatform.android,
-        appBarTheme: AppBarTheme(
-          backgroundColor: Colors.transparent,
-          foregroundColor: Colors.black,
-          elevation: 0,
-          titleTextStyle: TextStyle(fontSize: 24, color: Colors.black),
-        )
-
-      ),
+          // colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+          fontFamily: 'Inter',
+          platform: TargetPlatform.android,
+          appBarTheme: AppBarTheme(
+            backgroundColor: Colors.transparent,
+            foregroundColor: Colors.black,
+            elevation: 0,
+            titleTextStyle: TextStyle(fontSize: 24, color: Colors.black),
+          )),
       home: const AuthPage(),
       routes: {
         '/buddyspace': (context) => const BuddySpace(),
@@ -65,7 +63,7 @@ class MainApp extends StatelessWidget {
         '/notifications': (context) => const Notifications(),
         '/buddyrequest': (context) => const BuddyRequest(),
         '/checkintasks': (context) => const CheckInTasks(),
-        // '/buddyspace': (context) => const BuddySpace(),
+        '/homepage': (context) => HomePage()
       },
     );
   }

@@ -27,7 +27,8 @@ class BuddyList extends StatelessWidget {
                 ),
                 title: Row(
                   children: [
-                    Text('Joseph'),
+                    Text('Joseph',
+                        style: TextStyle(fontWeight: FontWeight.bold)),
                     SizedBox(width: 10),
                     Badge(
                       backgroundColor: Colors.green.shade400,
@@ -47,25 +48,10 @@ class BuddyList extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-                title: Row(
-                  children: [
-                    Text('Min'),
-                    SizedBox(width: 10),
-                  ],
-                ),
+                title: Text('Min', style: TextStyle(fontWeight: FontWeight.bold)),
                 subtitle: Text("Archived Chat"),
               ),
             ),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/invitebuddy');
-                },
-                child: const Text("Invite Buddy")),
-            ElevatedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/buddysettings');
-                },
-                child: const Text("Buddy Settings")),
           ],
         ));
   }

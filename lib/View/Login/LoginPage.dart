@@ -158,10 +158,10 @@ class _LoginPage extends State<LoginPage> {
     }
 
     return Scaffold(
-      backgroundColor: appTheme.colorScheme.background,
+      backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
         title: Text('Login Page'),
-        backgroundColor: Colors.blue,
+        // backgroundColor: Colors.blue,
       ),
       body: Form(
         key: _formKey,
@@ -321,15 +321,15 @@ class _LoginPage extends State<LoginPage> {
                       SizedBox(width: 25,),
 
 
-                      GestureDetector(
-                        child: MouseRegion(
-                          cursor: SystemMouseCursors.click,
-                          child: const SquareTile(
-                          imagePath: 'lib/images/appleicon.png', 
-                          height: 40,
-                          ),
-                        ) ,
-                      ),
+                      // GestureDetector(
+                      //   child: MouseRegion(
+                      //     cursor: SystemMouseCursors.click,
+                      //     child: const SquareTile(
+                      //     imagePath: 'lib/images/appleicon.png', 
+                      //     height: 40,
+                      //     ),
+                      //   ) ,
+                      // ),
                     ],
                   )
                 ),

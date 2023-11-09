@@ -29,7 +29,7 @@ class _CheckInTasksState extends State<CheckInTasks> {
               endTimeController.text = endTime.format(context).toString();
             }));
   }
-  
+
   bool done = false;
 
   @override
@@ -44,12 +44,7 @@ class _CheckInTasksState extends State<CheckInTasks> {
         backgroundColor: Colors.grey.shade50,
         foregroundColor: Colors.black,
         actions: [
-          // ElevatedButton(onPressed: () {}, child: Text("Check In"))
-          // ActionChip(avatar: Icon(Icons.check), onPressed: () { setState(() {
-          //   done = !done;
-          // }); },  label: Text("Done"))
-
-          IconButton(onPressed: () {} , icon: Icon(Icons.check))
+          IconButton(onPressed: () {}, icon: Icon(Icons.check))
         ],
       ),
       body: SingleChildScrollView(
@@ -61,7 +56,7 @@ class _CheckInTasksState extends State<CheckInTasks> {
                   readOnly: false,
                   controller: TextEditingController(
                       text:
-                          "Do 10 sets of Science Paperddddddddddddddddddddddssssssssssssssssssss"),
+                          "Study Bio Chapter 4"),
                   decoration: InputDecoration(
                       labelText: 'Task Name',
                       // labelStyle: TextStyle(color: Colors.black),
@@ -71,9 +66,7 @@ class _CheckInTasksState extends State<CheckInTasks> {
                           borderSide: BorderSide(color: Colors.grey.shade200)),
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue)))),
-
               SizedBox(height: 25),
-
               Row(
                 children: [
                   Flexible(
@@ -111,15 +104,13 @@ class _CheckInTasksState extends State<CheckInTasks> {
                                       BorderSide(color: Colors.blue))))),
                 ],
               ),
-
               SizedBox(height: 20),
-
               TextField(
                   maxLines: 5,
                   readOnly: false,
                   controller: TextEditingController(
                       text:
-                          "Do 10 sets of Science Paperddddddddddddddddddddddssssssssssssssssssss"),
+                          "Learned new Bio concepts"),
                   decoration: InputDecoration(
                       labelText: 'Description',
                       // labelStyle: TextStyle(color: Colors.black),
@@ -129,10 +120,8 @@ class _CheckInTasksState extends State<CheckInTasks> {
                           borderSide: BorderSide(color: Colors.grey.shade200)),
                       focusedBorder: OutlineInputBorder(
                           borderSide: BorderSide(color: Colors.blue)))),
-              
               SizedBox(height: 20),
               ElevatedButton(onPressed: () {}, child: Text("Upload Image")),
-
             ],
           )),
     );

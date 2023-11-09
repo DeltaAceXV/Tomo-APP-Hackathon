@@ -50,11 +50,11 @@ class StatsPage extends StatelessWidget {
                           child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Study Bio Chapter 4",
+                                Text("Do Bio Chapter 4 Exercise",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold)),
                                 SizedBox(height: 5),
-                                Text("10:00 AM - 12:00 PM",
+                                Text("2:00 PM - 3:00 PM",
                                     style: TextStyle(fontSize: 13)),
                               ]),
                         ),
@@ -70,51 +70,11 @@ class StatsPage extends StatelessWidget {
                           child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Study Bio Chapter 4",
+                                Text("Memorize Periodic Table",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold)),
                                 SizedBox(height: 5),
-                                Text("10:00 AM - 12:00 PM",
-                                    style: TextStyle(fontSize: 13)),
-                              ]),
-                        ),
-                        TextButton(onPressed: () {}, child: Text("See Details"))
-                      ],
-                    ))),
-            Card(
-                child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Study Bio Chapter 4",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold)),
-                                SizedBox(height: 5),
-                                Text("10:00 AM - 12:00 PM",
-                                    style: TextStyle(fontSize: 13)),
-                              ]),
-                        ),
-                        TextButton(onPressed: () {}, child: Text("See Details"))
-                      ],
-                    ))),
-            Card(
-                child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text("Study Bio Chapter 6",
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.bold)),
-                                SizedBox(height: 5),
-                                Text("10:00 AM - 12:00 PM",
+                                Text("6:00 PM - 6:30 PM",
                                     style: TextStyle(fontSize: 13)),
                               ]),
                         ),

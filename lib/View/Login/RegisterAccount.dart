@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
@@ -53,10 +54,17 @@ class _RegisterAccountPage extends State<RegisterAccountPage> {
       });
 
       try{
-        await FirebaseAuth.instance.createUserWithEmailAndPassword(
+        UserCredential userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: loginIdController.text,
           password: passwordController.text
         );
+
+        FirebaseFirestore.instance.collection("user").doc(userCredential.user!.uid).set({
+          'authenticationid' :  userCredential.user!.uid,
+          'email': userCredential.user!.email
+        });
+
+
 
         Navigator.pop(context);
         Navigator.pop(context);
@@ -99,7 +107,9 @@ class _RegisterAccountPage extends State<RegisterAccountPage> {
     }
 
     return Scaffold(
-      backgroundColor: appTheme.colorScheme.background,
+      // backgroundColor: appTheme.colorScheme.background,
+      appBar: AppBar(title: Text("Register Account")),
+      backgroundColor: Colors.grey.shade100,
       body: Form(
         key: _formKey,
         child: SingleChildScrollView(

@@ -16,7 +16,7 @@ class BuddyCard extends StatelessWidget {
       required this.name,
       required this.gender,
       required this.educationLevel,
-      this.exam = "",
+      required this.exam,
       this.major = "",
       required this.description});
 
@@ -78,7 +78,7 @@ class BuddyCard extends StatelessWidget {
                     label: Text(educationLevelString),
                     backgroundColor: Colors.lightBlue.shade100,
                   ),
-                  if (exam != "") ...[
+                  if (exam != "NA") ...[
                     SizedBox(width: 8),
                     Chip(
                       labelStyle: TextStyle(fontSize: 13),

@@ -12,6 +12,7 @@ class ChatBubble extends StatelessWidget {
         alignment: alignment == 'right' ? Alignment.topRight : Alignment.topLeft,
         padding: EdgeInsets.all(10),
         child: Container(
+            constraints: BoxConstraints(maxWidth: 300),
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
             child: Text(message),
             // color: Colors.blue.shade300,
