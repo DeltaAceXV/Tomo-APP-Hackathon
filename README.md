@@ -1,3 +1,3 @@
-# tracklocation
+# Tomo App
 
-A new Flutter project.
+For DevHack 2023
